@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B0AD5E21D69DD8500E747CA /* PianoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0AD5E11D69DD8500E747CA /* PianoButton.swift */; };
+		6B34A06E1E1AF742001053FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B34A06D1E1AF742001053FA /* Assets.xcassets */; };
+		6B6EEF591D6855450058D205 /* MIDIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6EEF581D6855450058D205 /* MIDIManager.swift */; };
+		6B70F2681D5369EA0089C673 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70F2671D5369EA0089C673 /* AppDelegate.swift */; };
+		6B70F26D1D5369EA0089C673 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B70F26B1D5369EA0089C673 /* MainMenu.xib */; };
+		6B870E5B1D64896600B28ABB /* MidiKeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B870E5A1D64896600B28ABB /* MidiKeyboardViewController.xib */; };
+		6B870E5D1D64896D00B28ABB /* MidiKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B870E5C1D64896D00B28ABB /* MidiKeyboardViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B0AD5E11D69DD8500E747CA /* PianoButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoButton.swift; sourceTree = "<group>"; };
+		6B0AD5E31D69FA6100E747CA /* MidiPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MidiPlayground.playground; sourceTree = "<group>"; };
+		6B34A06D1E1AF742001053FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B6EEF581D6855450058D205 /* MIDIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDIManager.swift; sourceTree = "<group>"; };
+		6B70F2641D5369EA0089C673 /* Midi Menu Bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Midi Menu Bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B70F2671D5369EA0089C673 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6B70F26C1D5369EA0089C673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6B70F26E1D5369EA0089C673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B870E5A1D64896600B28ABB /* MidiKeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MidiKeyboardViewController.xib; sourceTree = SOURCE_ROOT; };
+		6B870E5C1D64896D00B28ABB /* MidiKeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiKeyboardViewController.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B70F2611D5369EA0089C673 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B70F25B1D5369EA0089C673 = {
+			isa = PBXGroup;
+			children = (
+				6B70F2661D5369EA0089C673 /* Midi Menu Bar */,
+				6B70F2651D5369EA0089C673 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B70F2651D5369EA0089C673 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B70F2641D5369EA0089C673 /* Midi Menu Bar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B70F2661D5369EA0089C673 /* Midi Menu Bar */ = {
+			isa = PBXGroup;
+			children = (
+				6B70F2671D5369EA0089C673 /* AppDelegate.swift */,
+				6B70F26B1D5369EA0089C673 /* MainMenu.xib */,
+				6B70F26E1D5369EA0089C673 /* Info.plist */,
+				6B34A06D1E1AF742001053FA /* Assets.xcassets */,
+				6B6EEF581D6855450058D205 /* MIDIManager.swift */,
+				6B870E5C1D64896D00B28ABB /* MidiKeyboardViewController.swift */,
+				6B0AD5E11D69DD8500E747CA /* PianoButton.swift */,
+				6B870E5A1D64896600B28ABB /* MidiKeyboardViewController.xib */,
+				6B0AD5E31D69FA6100E747CA /* MidiPlayground.playground */,
+			);
+			path = "Midi Menu Bar";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B70F2631D5369EA0089C673 /* Midi Menu Bar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B70F2711D5369EA0089C673 /* Build configuration list for PBXNativeTarget "Midi Menu Bar" */;
+			buildPhases = (
+				6B70F2601D5369EA0089C673 /* Sources */,
+				6B70F2611D5369EA0089C673 /* Frameworks */,
+				6B70F2621D5369EA0089C673 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Midi Menu Bar";
+			productName = "Midi Menu Bar";
+			productReference = 6B70F2641D5369EA0089C673 /* Midi Menu Bar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B70F25C1D5369EA0089C673 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = kl;
+				TargetAttributes = {
+					6B70F2631D5369EA0089C673 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 6B70F25F1D5369EA0089C673 /* Build configuration list for PBXProject "Midi Menu Bar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B70F25B1D5369EA0089C673;
+			productRefGroup = 6B70F2651D5369EA0089C673 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B70F2631D5369EA0089C673 /* Midi Menu Bar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B70F2621D5369EA0089C673 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B870E5B1D64896600B28ABB /* MidiKeyboardViewController.xib in Resources */,
+				6B34A06E1E1AF742001053FA /* Assets.xcassets in Resources */,
+				6B70F26D1D5369EA0089C673 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B70F2601D5369EA0089C673 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B870E5D1D64896D00B28ABB /* MidiKeyboardViewController.swift in Sources */,
+				6B6EEF591D6855450058D205 /* MIDIManager.swift in Sources */,
+				6B70F2681D5369EA0089C673 /* AppDelegate.swift in Sources */,
+				6B0AD5E21D69DD8500E747CA /* PianoButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6B70F26B1D5369EA0089C673 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B70F26C1D5369EA0089C673 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B70F26F1D5369EA0089C673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6B70F2701D5369EA0089C673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		6B70F2721D5369EA0089C673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Midi Menu Bar/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kl.Midi-Menu-Bar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6B70F2731D5369EA0089C673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Midi Menu Bar/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kl.Midi-Menu-Bar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B70F25F1D5369EA0089C673 /* Build configuration list for PBXProject "Midi Menu Bar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B70F26F1D5369EA0089C673 /* Debug */,
+				6B70F2701D5369EA0089C673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B70F2711D5369EA0089C673 /* Build configuration list for PBXNativeTarget "Midi Menu Bar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B70F2721D5369EA0089C673 /* Debug */,
+				6B70F2731D5369EA0089C673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B70F25C1D5369EA0089C673 /* Project object */;
+}
