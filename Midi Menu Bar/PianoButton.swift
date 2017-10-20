@@ -77,15 +77,15 @@ import Cocoa
         
         if(mouseState) {
             if (!keyBool) {
-                self.image = NSImage(named: "whiteKeyTint")
+                self.image = NSImage(named: NSImage.Name(rawValue: "whiteKeyTint"))
             } else {
-                self.image = NSImage(named: "blackKeyTint")
+                self.image = NSImage(named: NSImage.Name(rawValue: "blackKeyTint"))
             }
         } else {
             if (!keyBool) {
-                self.image = NSImage(named: "whiteKey")
+                self.image = NSImage(named: NSImage.Name(rawValue: "whiteKey"))
             } else {
-                self.image = NSImage(named: "blackKey")
+                self.image = NSImage(named: NSImage.Name(rawValue: "blackKey"))
             }
         }
     }

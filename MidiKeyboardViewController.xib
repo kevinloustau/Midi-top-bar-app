@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -30,12 +30,13 @@
                         <action selector="octaceMoins:" target="-2" id="rVk-0S-gmp"/>
                     </connections>
                 </button>
-                <button ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NPT-RI-5Ax" customClass="PianoButton" customModule="Midi_Menu_Bar" customModuleProvider="target">
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="NPT-RI-5Ax" customClass="PianoButton" customModule="Midi_Menu_Bar" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="3" width="50" height="180"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="50" id="Re8-me-Ga1"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="Tpr-ag-N59"/>
+                        <constraint firstAttribute="height" constant="180" id="sa0-XI-yDM"/>
                     </constraints>
-                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="whiteKey" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="mXm-HF-bZY">
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="whiteKey" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="mXm-HF-bZY">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
@@ -180,7 +181,7 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isBlackKey" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </button>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mX7-GW-n19">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mX7-GW-n19">
                     <rect key="frame" x="292" y="179" width="27" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" placeholderString="" id="8K0-1c-dZ2">
@@ -201,6 +202,10 @@
                     </connections>
                 </button>
             </subviews>
+            <constraints>
+                <constraint firstItem="NPT-RI-5Ax" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="88G-WH-UL0"/>
+                <constraint firstAttribute="bottom" secondItem="NPT-RI-5Ax" secondAttribute="bottom" constant="3" id="Fxk-Gt-eN0"/>
+            </constraints>
             <point key="canvasLocation" x="178" y="266.5"/>
         </customView>
     </objects>

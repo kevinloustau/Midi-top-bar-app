@@ -14,18 +14,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
     
-    let statusItem = NSStatusBar.system().statusItem(withLength: -2)
+    let statusItem = NSStatusBar.system.statusItem(withLength: -2)
     let popover = NSPopover()
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
         
         if let button = statusItem.button {
-            button.image = NSImage(named: "keyboardIcon")
+            button.image = NSImage(named: NSImage.Name(rawValue: "keyboardIcon"))
             button.action = #selector(AppDelegate.togglePopover(_:))
         }
         
-        popover.contentViewController = MidiKeyboardViewController(nibName: "MidiKeyboardViewController", bundle: nil)
+        popover.contentViewController = MidiKeyboardViewController(nibName: NSNib.Name(rawValue: "MidiKeyboardViewController"), bundle: nil)
 
     }
 
@@ -46,7 +46,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         popover.performClose(sender)
     }
     
-    func togglePopover(_ sender: AnyObject?) {
+    @objc func togglePopover(_ sender: AnyObject?) {
         if popover.isShown {
             closePopover(sender)
         } else {

@@ -22,7 +22,7 @@ class MidiKeyboardViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-        
+        octaveLabel.stringValue = "0"
         //Init value : 
         octaveLabelUpdate(currentOctave: 0)
         
@@ -47,7 +47,7 @@ class MidiKeyboardViewController: NSViewController {
     
     
     @IBAction func closeApp(_ sender: Any) {
-        NSApplication.shared().terminate(sender)
+        NSApplication.shared.terminate(sender)
     }
     
     
